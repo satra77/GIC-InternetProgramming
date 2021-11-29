@@ -1,0 +1,382 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    font-family: 'Open Sans';
+}
+
+.about {
+    position: relative;
+    width: 100%;
+}
+/* Sidebar */
+
+.about .sidebar {
+    position: fixed;
+    width: 20%;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 100px;
+   padding-top: 20%;
+   
+}
+
+.sidebar h2,
+h4 {
+    line-height: 50px;
+}
+
+.sidebar h2 {
+    padding-top: 5%;
+}
+
+.sidebar h4 {
+    color: grey;
+}
+
+.sidebar ul {
+    
+    padding-top: 30%;
+}
+
+.sidebar ul li {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.sidebar ul li {
+    padding: 20px 0px 20px 0px;
+}
+
+.sidebar ul li a {
+    color: black;
+    font-weight: 600;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.sidebar ul li:hover {
+    background-color:rgb(235, 233, 233);
+    border-right: 3px solid yellow;
+    ;
+}
+.sidebar .social-media {
+    padding-top: 15%;
+}
+.sidebar .social-media i {
+    width: 30px;
+    background-color: white;
+    color: black;
+    border-radius: 10%;
+    margin-left: 2%;
+}
+.about .home {
+    position: relative;
+    width: 80%;
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 0;
+}
+
+.home .shadow {
+    width: 2%;
+    height: 200vh;
+    background-color: whitesmoke;
+    position: absolute;
+}
+
+.home .home-items {
+    padding-left: 20px;
+    padding-top: 5%;
+}
+
+.home .home-items i {
+    background-color: rgb(245, 202, 12);
+    position: absolute;
+    font-size: 32px;
+    font-weight: 600;
+    color: seashell;
+    width: 250px;
+    height: 50px;
+    text-align: right;
+    padding-right: 50px;
+    padding-top: 20px;
+    border-top-left-radius: 20px;
+}
+
+.home-items i:before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: rgb(245, 202, 12);
+    left: 0px;
+    top: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 2;
+}
+
+.home-items i::after {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 15px;
+    background-color: yellow;
+    left: 0px;
+    top: 100%;
+}
+
+.home-items span {
+    position: absolute;
+    margin: 30% 0 0 30%;
+    margin-top: 2%;
+    color: grey;
+    font-weight: 1000;
+}
+
+.home-items .intoduct {
+    position: absolute;
+    padding-top: 10%;
+    width: 100%;
+    height: 300px;
+}
+
+.about .home .intoduct {
+    position: relative;
+    margin-top: 10%;
+    width: 100%;
+    height: 350px;
+}
+
+.intoduct .item1 {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    padding-left: 5%;
+}
+
+.intoduct .item1 h2 {
+    margin-left: 10%;
+}
+
+.intoduct .item1 p {
+    color: black;
+    padding-right: 20%;
+    margin-top: 4%;
+    margin-left: 5%;
+}
+
+.intoduct .item1 .paragraph {
+    color: rgba(0, 0, 0, 0.9);
+    padding-right: 20%;
+    margin-top: 20%;
+    margin-left: 5%;
+}
+
+.intoduct .item2 {
+    position: absolute;
+    width: 45%;
+    height: 100%;
+    margin-left: 55%;
+}
+
+.item2 h2 {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    margin-left: 8%;
+}
+
+.intoduct .item2 .block1 {
+    height: 220px;
+    position: absolute;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-top: 5%;
+    margin-left: 27%;
+}
+
+.block1 span {
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: 15%;
+    margin-right: 10%;
+}
+
+.intoduct .item2 .block2 img,
+span,
+p {
+    height: 100px;
+    position: absolute;
+    margin-left: 18%;
+    margin-top: 40%;
+}
+
+.block2 img {
+    border-radius: 100%;
+    border: 2px ;
+}
+
+.block2 span {
+    padding-left: 23%;
+    padding-top: 8%;
+    font-weight: 600;
+    font-size: large;
+}
+
+.block2 p {
+    padding-left: 23%;
+    padding-top: 13%;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.block2 p span {
+    color: rgba(0, 0, 0, 0.4);
+    margin-top: -20%;
+    margin-left: 30%;
+}
+.home .service {
+    position: relative;
+    width: 88%;
+    height: 150px;
+    margin: 2% 0 0 1%;
+    padding-left: 5%;
+    padding-top: 1%;
+}
+
+.home .service .service-item1,
+.service-item2,
+.service-item3,
+.service-item4 {
+    position: absolute;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+}
+
+.service-item1 h2 {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    margin-bottom: 10%;
+    padding-right: 40%;
+}
+
+.service-item2 img,
+.service-item3 img,
+.service-item4 img {
+    height: 85px;
+    padding-top: 20%;
+}
+
+.service-item1 img {
+    height: 85px;
+}
+
+.service-item1 p,
+.service-item2 p,
+.service-item3 p,
+.service-item4 p {
+    position: absolute;
+    text-align: center;
+    margin: 0;
+    padding: 5% 16% 0 16%;
+    color: black;
+}
+
+.service-item2 {
+    margin-left: 25%;
+}
+
+.service-item3 {
+    margin-left: 50%;
+}
+
+.service-item4 {
+    margin-left: 75%;
+}
+
+.home .client {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    margin: 5% 0 0 10%;
+    margin-top: 13%;
+    display: flex;
+}
+
+.client>div {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+}
+
+.client>div img {
+    padding-top: 30%;
+    height: 85px;
+    padding-right: 100%;
+}
+
+.client h2 {
+    position: absolute;
+    text-decoration: underline;
+    text-decoration-color: yellow
+}
+
+.client .client2 {
+    margin-left: 20%;
+}
+
+.client .client3 {
+    margin-left: 35%;
+}
+
+.client .client4 {
+    margin-left: 50%;
+}
+
+.client .client5 {
+    margin-left: 70%;
+}
+
+.client .client6 {
+    margin-left: 80%;
+}
+
+.home .award {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    margin: 5% 0 0 10%;
+    display: flex;
+}
+
+.home .award h2 {
+    position: absolute;
+    text-decoration: underline yellow;
+}
+
+.award>div {
+    width: 25%;
+    border: 2px solid rgb(221, 221, 221);
+    margin: 5% 5% -5% 0;
+    text-align: center;
+}
+
+.award .item1 {
+    background-color: rgba(107, 105, 105, 0.1);
+}
+
+.award>div img {
+    height: 85px;
+    padding-top: 15%;
+}
+
+.award>div div {
+    color: rgb(245, 202, 12);
+    font-weight: 500;
+    font-size: xx-large;
+}

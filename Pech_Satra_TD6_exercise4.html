@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 4</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=CK2ES0CYKby7DFajDweVOTQmYNDRQhqoCdt8Q9y74XqCFw8ClGSOxleE9IYSnw-KhWuUE_YEfTdyzjJ2SKGPF8MntV3PVa1y2h001WsgylrAGtwbH5bdqjb6XrKvyv52ZZK60wCzsvx36MzBYxc36jR8fkkwQmxzMLWIGyfXwHXc1nqTrh8zYNG4XxcJrXP5HdphfyCTc54owF610T2FFrVP2O4l488wQQnrt2LMglxpN8D2mMy9DXqN2cT5w3ET74HgjkSFnTsXzeoBWcZoyw5Noc0RTKI9zJi3AojrB_003wfbeEGSIhUqRutN497EgXcqdgabw4cDze_05F_06gLh2nv2qvmrza3b8pExTwFq2TnHeEFgiMKx6G2OjTCG" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZmJzYnguY29tL3YvdDU5LjI3MDgtMjEvMjczNTY4NDQ5XzYzMzk1NTQ4NDQ5MTUzN180NzA0ODcwMjY5NzQ1MjY3MDU4X24uaHRtbC9leGVyY2lzZTQuaHRtbD9fbmNfY2F0PTEwMCZjY2I9MS01Jl9uY19zaWQ9MGNhYjE0Jl9uY19vaGM9SmZVZTl3cFNDWGtBWDk4UTBuRCZfbmNfaHQ9Y2RuLmZic2J4LmNvbSZvaD0wM19BVkpRS2JxTU13QnVuM0VjVTRsS09EVndRRTJkaXFvM0J2cUdFVVNORXQ1ZTF3Jm9lPTYyMDc3QTgyJmRsPTE"/><style>
+        body {
+            background-color: pink;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">Data Loading</div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        const getposts = axios.get('https://jsonplaceholder.typicode.com/posts');
+        const getcomments = axios.get('https://jsonplaceholder.typicode.com/comments');
+        const getphotos = axios.get('https://jsonplaceholder.typicode.com/photos');
+
+        Promise.all([getposts, getcomments, getphotos]).then((result) => {
+            document.getElementsByClassName('container')[0].innerHTML = `load is ready`;
+        })
+    </script>
+</body>
+
+</html>
